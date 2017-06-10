@@ -1,7 +1,10 @@
 $(document).ready(function(){
+
+//Add initial picture
   var count = 0;
   $("#carousel").html(pictures[0])
 
+//Logic for moving right
 $(".fa-arrow-circle-right").on('click',function() {
   count++
 
@@ -14,6 +17,8 @@ $(".fa-arrow-circle-right").on('click',function() {
   count = 0; }
 
 })
+
+//Logic for moving left
 
 $(".fa-arrow-circle-left").on('click',function() {
   count--
