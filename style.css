@@ -14,11 +14,25 @@ body {
     border: 2px solid black;
     margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/*I used this answer to make the images fill the entire carousel div:
+https://stackoverflow.com/questions/14142378/css-filling-a-div-with-an-image-while-staying-in-proportion*/
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+
+}
+
+#carousel img {
+  flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
 }
 
 button {
   margin-top: 20px;
+  display:
 }
 
 .circle {
@@ -26,7 +40,7 @@ button {
 	width: 20px;
 	height: 20px;
   border: 2px solid black;
-  margin-top: 350px;
+  margin-top: 20px;
   display: inline-block;
 }
 
