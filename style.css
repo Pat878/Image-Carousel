@@ -16,7 +16,7 @@ button {
 	height: 20px;
   border: 2px solid black;
   margin-top: 350px;
-
+  display: inline-block;
 }
 
 .circle1 {
@@ -24,7 +24,7 @@ button {
 	width: 20px;
 	height: 20px;
   border: 2px solid black;
-  
+
   }
 
 /*Used the @media code from here:
