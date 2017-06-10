@@ -5,3 +5,15 @@
     border: 2px solid black;
     margin-top: 20px;
 }
+
+button {
+  margin-top: 20px;
+}
+
+.circle {
+  border-radius: 50%;
+	width: 20px;
+	height: 20px;
+  border: 2px solid black;
+  margin-top: 350px;
+}
