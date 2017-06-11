@@ -42,9 +42,7 @@ $(".fa-arrow-circle-left").on('click',function() {
   count = 5; }
 
   count--
-
   navCircles();
-
   $("#carousel").html(pictures[count])
 })
 
@@ -52,12 +50,6 @@ function navCircles() {
   $(".circle").removeClass("active")
   $("#"+count).addClass("active")
 
-  if (count == 6) {
-  $("#0").addClass("active")  }
-
-  if ($("#0").hasClass("active") == true &&
-  $("#5").hasClass("active") ) {
-  $("#5").removeClass("active") }
 }
 
 $(".circle").on('click',function() {
