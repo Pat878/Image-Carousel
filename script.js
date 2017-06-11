@@ -3,32 +3,64 @@ $(document).ready(function(){
 //Add initial picture
   var count = 0;
   $("#carousel").html(pictures[0])
+  $("#0").addClass("active")
 
 //Logic for moving right
 $(".fa-arrow-circle-right").on('click',function() {
   count++
 
+  navCirclesRight();
+
   $("#carousel").html(pictures[count])
   if (count == 5) {
   count = -1 }
-
   if (count == 6){
   $("#carousel").html(pictures[0])
   count = 0; }
 
-})
+  })
 
 //Logic for moving left
 
 $(".fa-arrow-circle-left").on('click',function() {
+
+  if (count == 0){
+  $("#carousel").html(pictures[5])
+  count = 6; }
+  if (count == -1){
+  $("#carousel").html(pictures[5])
+  count = 5; }
+
   count--
+
+  navCirclesLeft();
+
   $("#carousel").html(pictures[count])
 
-  if (count == -1){
-    $("#carousel").html(pictures[5])
-    count = 5; }
+
+
 
 })
+
+function navCirclesRight() {
+  $("#"+count).addClass("active")
+  $("#"+(count-1)).removeClass("active")
+
+  if ($("#0").hasClass("active") == true &&
+  $("#5").hasClass("active") ) {
+    $("#5").removeClass("active") }
+}
+
+function navCirclesLeft() {
+  $("#"+count).addClass("active")
+  $("#"+(count+1)).removeClass("active")
+console.log(count)
+  if ($("#5").hasClass("active")) {
+    $("#"+(count+6)).addClass("active")
+
+    $("#5").removeClass("active") }
+}
+
 
 })
 

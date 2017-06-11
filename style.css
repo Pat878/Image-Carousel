@@ -54,3 +54,7 @@ https://stackoverflow.com/questions/12632500/making-div-content-responsive*/
 h1 {
   font-family: 'Fjalla One', sans-serif;
 }
+
+.active {
+  background-color: black;
+}
