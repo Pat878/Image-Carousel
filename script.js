@@ -7,7 +7,6 @@ $(document).ready(function(){
 
   timer = setInterval(function(){
 
-  console.log(count)
     count++
     $("#carousel").html($(pictures[count]).fadeIn())
     $(".circle").removeClass("active")
