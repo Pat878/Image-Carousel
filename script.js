@@ -21,7 +21,6 @@ console.log(count)
   })
 
 //Logic for moving left
-
 $(".fa-arrow-circle-left").on('click',function() {
 
   if (count == 0){
@@ -36,26 +35,36 @@ $(".fa-arrow-circle-left").on('click',function() {
   navCirclesLeft();
 
   $("#carousel").html(pictures[count])
-
 })
 
 function navCirclesRight() {
   $("#"+count).addClass("active")
   $("#"+(count-1)).removeClass("active")
 
+  if (count == 6) {
+  $("#0").addClass("active")  }
+
   if ($("#0").hasClass("active") == true &&
   $("#5").hasClass("active") ) {
-    $("#5").removeClass("active") }
+  $("#5").removeClass("active") }
 }
 
 function navCirclesLeft() {
+
   $("#"+count).addClass("active")
   $("#"+(count+1)).removeClass("active")
 
-if ($("#0").hasClass("active") == true &&
-count == 5 ) {
+  if ($("#0").hasClass("active") == true &&
+  count == 5 ) {
   $("#0").removeClass("active") }
 }
+
+$(".circle").on('click',function() {
+  $("#carousel").html(pictures[this.id])
+  $(".circle").removeClass("active")
+  $("#"+this.id).addClass("active")
+  count = this.id
+})
 
 })
 
