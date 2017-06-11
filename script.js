@@ -8,7 +8,7 @@ $(document).ready(function(){
 //Logic for moving right
 $(".fa-arrow-circle-right").on('click',function() {
   count++
-
+console.log(count)
   navCirclesRight();
 
   $("#carousel").html(pictures[count])
@@ -37,9 +37,6 @@ $(".fa-arrow-circle-left").on('click',function() {
 
   $("#carousel").html(pictures[count])
 
-
-
-
 })
 
 function navCirclesRight() {
@@ -54,13 +51,11 @@ function navCirclesRight() {
 function navCirclesLeft() {
   $("#"+count).addClass("active")
   $("#"+(count+1)).removeClass("active")
-console.log(count)
-  if ($("#5").hasClass("active")) {
-    $("#"+(count+6)).addClass("active")
 
-    $("#5").removeClass("active") }
+if ($("#0").hasClass("active") == true &&
+count == 5 ) {
+  $("#0").removeClass("active") }
 }
-
 
 })
 
