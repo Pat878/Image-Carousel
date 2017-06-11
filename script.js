@@ -5,11 +5,22 @@ $(document).ready(function(){
   $("#carousel").html(pictures[0])
   $("#0").addClass("active")
 
+  timer = setInterval(function(){
+
+  console.log(count)
+    count++
+    $("#carousel").html(pictures[count])
+    $(".circle").removeClass("active")
+    $("#"+count).addClass("active")
+    if (count > 4){
+      count = -1
+    }
+    },6000)
+
 //Logic for moving right
 $(".fa-arrow-circle-right").on('click',function() {
   count++
-console.log(count)
-  navCirclesRight();
+  navCircles();
 
   $("#carousel").html(pictures[count])
   if (count == 5) {
@@ -32,14 +43,14 @@ $(".fa-arrow-circle-left").on('click',function() {
 
   count--
 
-  navCirclesLeft();
+  navCircles();
 
   $("#carousel").html(pictures[count])
 })
 
-function navCirclesRight() {
+function navCircles() {
+  $(".circle").removeClass("active")
   $("#"+count).addClass("active")
-  $("#"+(count-1)).removeClass("active")
 
   if (count == 6) {
   $("#0").addClass("active")  }
@@ -49,30 +60,12 @@ function navCirclesRight() {
   $("#5").removeClass("active") }
 }
 
-function navCirclesLeft() {
-
-  $("#"+count).addClass("active")
-  $("#"+(count+1)).removeClass("active")
-
-  if ($("#0").hasClass("active") == true &&
-  count == 5 ) {
-  $("#0").removeClass("active") }
-}
-
 $(".circle").on('click',function() {
   $("#carousel").html(pictures[this.id])
   $(".circle").removeClass("active")
   $("#"+this.id).addClass("active")
   count = this.id
 })
-
-timer = setInterval(function(){
-  count++
-  $("#carousel").html(pictures[count])
-  $(".circle").removeClass("active")
-  $("#"+count).addClass("active")
-
-},6000)
 
 })
 
