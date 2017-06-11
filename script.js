@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   console.log(count)
     count++
-    $("#carousel").html(pictures[count])
+    $("#carousel").html($(pictures[count]).fadeIn())
     $(".circle").removeClass("active")
     $("#"+count).addClass("active")
     if (count > 4){
@@ -22,7 +22,7 @@ $(".fa-arrow-circle-right").on('click',function() {
   count++
   navCircles();
 
-  $("#carousel").html(pictures[count])
+  $("#carousel").html($(pictures[count]).fadeIn())
   if (count == 5) {
   count = -1 }
   if (count == 6){
@@ -43,20 +43,19 @@ $(".fa-arrow-circle-left").on('click',function() {
 
   count--
   navCircles();
-  $("#carousel").html(pictures[count])
+  $("#carousel").html($(pictures[count]).fadeIn())
 })
 
 function navCircles() {
   $(".circle").removeClass("active")
   $("#"+count).addClass("active")
-
 }
 
 $(".circle").on('click',function() {
   $("#carousel").html(pictures[this.id])
   $(".circle").removeClass("active")
   $("#"+this.id).addClass("active")
-  count = this.id
+  count = this.id;
 })
 
 })
