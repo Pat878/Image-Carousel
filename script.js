@@ -66,6 +66,14 @@ $(".circle").on('click',function() {
   count = this.id
 })
 
+timer = setInterval(function(){
+  count++
+  $("#carousel").html(pictures[count])
+  $(".circle").removeClass("active")
+  $("#"+count).addClass("active")
+
+},6000)
+
 })
 
 var pictures = [
