@@ -58,3 +58,37 @@ h1 {
 .active {
   background-color: black;
 }
+
+.test {
+  height: 200px;
+  width: 300px;
+  border: 2px solid black;
+  top: 200px;
+  left: 1000px;
+  position: absolute;
+  display: none;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+
+.test img, .test1 img {
+  flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.test1 {
+  height: 200px;
+  width: 300px;
+  border: 2px solid black;
+  top: 200px;
+  right: 1000px;
+  position: absolute;
+  display: none;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}

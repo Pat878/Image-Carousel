@@ -5,6 +5,19 @@ $(document).ready(function(){
   $("#carousel").html(pictures[0])
   $("#0").addClass("active")
 
+  $(".fa-arrow-circle-right").hover(function(){
+    $(".test").html( $(pictures[count+1])).toggle();
+  })
+
+  $(".fa-arrow-circle-left").hover(function(){
+    if (count == 0) {
+      $(".test1").html( $(pictures[5])).toggle(); }
+    else if (count == -1) {
+      $(".test1").html( $(pictures[4])).toggle(); }
+    else {
+    $(".test1").html( $(pictures[count-1])).toggle();}
+  })
+
   timer = setInterval(function(){
 
     count++
