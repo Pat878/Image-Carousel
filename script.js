@@ -73,10 +73,10 @@ $(".circle").on('click',function() {
 })
 
 var pictures = [
-  "<img src='http://www.almanac.com/sites/default/files/birth_month_flowers-primary-1920x1280px_pixabay.jpg' height='200' width='100'>",
-  "<img src='https://cdn.pixabay.com/photo/2016/07/04/18/16/sun-flower-1497092_960_720.jpg' height='200' width='100'>",
-    "<img src='https://static.pexels.com/photos/87452/flowers-background-butterflies-beautiful-87452.jpeg' height='200' width='100'>",
-      "<img src='http://en.bcdn.biz/Images/2016/7/11/c86de5a5-2107-4382-a98c-184ebf681497.jpg' height='200' width='100'>",
-        "<img src='https://s-media-cache-ak0.pinimg.com/736x/42/57/74/425774f7602fb65cd57596d51a560dd5.jpg' height='200' width='100'>",
-        "<img src='https://s-media-cache-ak0.pinimg.com/736x/0b/3a/63/0b3a635dc6ced12752f49c67d8ce1855.jpg' height='200' width='100'>"
+  "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-1-compressor.jpg' height='200' width='80'>",
+  "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-2-compressor.jpg' height='200' width='80'>",
+    "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-3-compressor.jpg' height='200' width='80'>",
+      "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-4-compressor.jpg' height='200' width='80'>",
+        "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-5-compressor.jpg' height='200' width='80'>",
+        "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-6-compressor.jpg' height='200' width='80'>"
 ]
