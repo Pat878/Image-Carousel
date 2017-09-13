@@ -73,10 +73,10 @@ $(".circle").on('click',function() {
 })
 
 var pictures = [
-  "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-1-compressor.jpg' height='200' width='80'>",
-  "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-2-compressor.jpg' height='200' width='80'>",
-    "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-3-compressor.jpg' height='200' width='80'>",
-      "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-4-compressor.jpg' height='200' width='80'>",
-        "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-5-compressor.jpg' height='200' width='80'>",
-        "<img src='http://patmellon.com/wp-content/uploads/2017/07/Elsie-Pic-6-compressor.jpg' height='200' width='80'>"
+  "<img src='/img/Elsie-Pic-1-compressor.jpg' height='200' width='80'>",
+  "<img src='/img/Elsie-Pic-2-compressor.jpg' height='200' width='80'>",
+    "<img src='/img/Elsie-Pic-3-compressor.jpg' height='200' width='80'>",
+      "<img src='/img/Elsie-Pic-4-compressor.jpg' height='200' width='80'>",
+        "<img src='/img/Elsie-Pic-5-compressor.jpg' height='200' width='80'>",
+        "<img src='/img/Elsie-Pic-6-compressor.jpg' height='200' width='80'>"
 ]
