@@ -73,7 +73,7 @@ $(".circle").on('click',function() {
 })
 
 var pictures = [
-  "<img src='/img/Elsie-Pic-1-compressor.jpg' height='200' width='80'>",
+  "<img src='C://Sites/Image-Carousel/img/Elsie-Pic-1-compressor.jpg' height='200' width='80'>",
   "<img src='/img/Elsie-Pic-2-compressor.jpg' height='200' width='80'>",
     "<img src='/img/Elsie-Pic-3-compressor.jpg' height='200' width='80'>",
       "<img src='/img/Elsie-Pic-4-compressor.jpg' height='200' width='80'>",
