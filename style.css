@@ -59,7 +59,7 @@ h1 {
   background-color: black;
 }
 
-.test {
+.right_section {
   height: 200px;
   width: 300px;
   border: 2px solid black;
@@ -73,13 +73,13 @@ h1 {
   overflow: hidden
 }
 
-.test img, .test1 img {
+.right_section img, .left_section img {
   flex-shrink: 0;
     min-width: 100%;
     min-height: 100%
 }
 
-.test1 {
+.left_section {
   height: 200px;
   width: 300px;
   border: 2px solid black;
